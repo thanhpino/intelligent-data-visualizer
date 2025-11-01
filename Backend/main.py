@@ -5,6 +5,16 @@ import os
 from pathlib import Path 
 
 app = FastAPI()
+app = FastAPI()
+
+# --- THÊM ĐOẠN CODE TEST NÀY VÀO ---
+@app.get("/")
+def read_root():
+    return {"Hello": "World", "Status": "Backend is running!"}
+# ------------------------------------
+
+origins = ["*"]
+# ... (phần còn lại của code giữ nguyên)
 
 origins = ["*"]
 app.add_middleware(
