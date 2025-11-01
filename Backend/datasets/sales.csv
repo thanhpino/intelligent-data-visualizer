@@ -1,0 +1,12 @@
+﻿order_date,category,product_name,quantity,unit_price,customer_id,region
+05/01/2025,Electronics,Laptop,1,1200,CUS-101,North
+12/01/2025,Clothing,T-Shirt,5,25,CUS-102,South
+20/01/2025,Electronics,Smartphone,2,800,CUS-103,North
+02/02/2025,Home Goods,Coffee Marker,1,150,CUS-101,North
+15/02/2025,Clothing,Jeans,2,75,CUS-104,North
+28/02/2025,Electronics,Headphone,3,100,CUS-102,West
+10/03/2025,Home Goods,Blender,1,80,CUS-105,South
+21/03/2025,Clothing,Jacket,1,120,CUS-103,East
+07/04/2025,Electronics,Laptop,1,1250,CUS-104,North
+18/04/2025,Home Goods,Toaster,2,40,CUS-101,West
+,,,,,,North
