@@ -1,0 +1,11 @@
+﻿Flight_Date,Airline,Origin,Destination,Passengers,Delay_Minutes
+15/01/2025,Vietnam Airlines,SGN,HAN,180,0
+16/01/2025,Vietjet Air,SGN,DAD,200,15
+16/01/2025,Bamboo Airways,HAN,SGN,150,0
+10/02/2025,Vietnam Airlines,DAD,HAN,175,45
+11/02/2025,Vietjet Air,SGN,HAN,190,0
+05/03/2025,Vietnam Airlines,SGN,DAD,185,5
+03/06/2025,Bamboo Airways,HAN,SGN,160,120
+20/04/2025,Vietjet Air,DAD,SGN,210,0
+17/05/2025,American Airlines,HAN,SGN,230,30
+03/06/2025,American Airlines,SGN,DAD,250,15

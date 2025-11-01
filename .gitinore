@@ -1,0 +1,16 @@
+# Môi trường ảo của Python
+backend/venv/
+
+# File cache của Python
+**/__pycache__/
+*.pyc
+
+# File cài đặt của Node.js
+frontend/node_modules/
+
+# File build của Next.js
+frontend/.next/
+
+# File môi trường (nếu có)
+.env
+*.env.local
