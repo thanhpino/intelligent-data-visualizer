@@ -120,8 +120,9 @@ export default function Home() {
                     {chartData && (
                         <div className="w-full">
                             <h3 className="text-xl font-semibold mb-4 text-center">{chartData.title}</h3>
-                            {chartData.type === 'bar' && <Bar options={{ responsive: true }} data={chartData.data} />}
+                            {chartData.type === 'bar' && <Bar options={{ responsive: true, plugins: { legend: { display: false } } }} data={chartData.data} />}
                             {chartData.type === 'pie' && <Pie options={{ responsive: true }} data={chartData.data} />}
+                            {chartData.type === 'line' && <Line options={{ responsive: true, plugins: { legend: { display: false } } }} data={chart.Data.data} /> }
                         </div>
                     )}
                 </div>
