@@ -1,15 +1,11 @@
-# backend/main.py (PHIÊN BẢN HOÀN CHỈNH)
 import pandas as pd
-from fastapi import FastAPI, HTTPException, APIRouter # <-- Thêm APIRouter
+from fastapi import FastAPI, HTTPException, APIRouter 
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 
 app = FastAPI()
 
-# --- API Router: Giải pháp cho lỗi 404 ---
-# Tạo một router mới để quản lý tất cả các API
 api_router = APIRouter(prefix="/api")
-# -----------------------------------------
 
 origins = ["*"]
 app.add_middleware(
@@ -25,15 +21,9 @@ DATASET_DIR = BASE_DIR / "datasets"
 
 def get_dataset_path(dataset_id: str):
     return DATASET_DIR / f"{dataset_id}.csv"
-
-# API Test gốc để kiểm tra server có sống không
 @app.get("/")
 def read_root():
     return {"Hello": "World", "Status": "Backend is running!"}
-
-# --- Chuyển tất cả API vào router mới ---
-# Lưu ý: @api_router.get thay vì @app.get
-# và đường dẫn không còn tiền tố "/api" nữa
 
 @api_router.get("/datasets")
 def get_datasets():
@@ -88,6 +78,4 @@ async def analyze_data(dataset_id: str, request: dict):
         "data": result[result.columns[1]].to_list(),
         "title": f"Phân tích '{column}' theo '{group_by_col}'"
     }
-
-# "Gắn" router vào ứng dụng chính
 app.include_router(api_router)
